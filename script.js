@@ -42,7 +42,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(27, 31, 27);
   
   for(let i = 0; i < slange.length; i = i + 1) {
     slange[i].tegnKvadrat()
