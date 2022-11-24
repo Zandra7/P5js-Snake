@@ -15,18 +15,11 @@ class Kroppsdel {
   
   tegnKvadrat() {
     square(this.xpos, this.ypos, this.stø)
-    fill('green')
+    fill('#3B69A9')
+    stroke('#192954')
+    strokeWeight(10)
   }
   
-  tegnSirkel() {
-    fill(this.farge) 
-    circle(this.xpos, this.ypos, this.stø)
-    
-  }
-  
-  tegnTrekant() {
-    triangle(this.xpos, this.ypos, this.xpos - this.stø, this.ypos - this.stø/2, this.xpos - this.stø, this.ypos + this.stø/2)
-  }
 }
 
 var slange = [new Kroppsdel(xstart, ystart, størrelse, "red"),
@@ -42,7 +35,7 @@ function setup() {
 }
 
 function draw() {
-  background(27, 31, 27);
+  background('#3B69A9');
   
   for(let i = 0; i < slange.length; i = i + 1) {
     slange[i].tegnKvadrat()
