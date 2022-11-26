@@ -9,22 +9,80 @@
     <script src="script.js"></script>
 
     <style>
+        @font-face {
+            font-family: "DebugFont";
+            src: url("debug-font/DebugFreeTrial-MVdYB.otf");
+        }
+
         body {
             background-color: #202b52;
             text-align: center;
-            margin-top: 10%;
+            font-family:"DebugFont";
+        }
+
+        h1 {
+            color: #4377BF;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            font-size: 100px;
         }
         
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
         .p5Canvas {
             border:10px dashed;
             border-color: #334165;
             
         }
 
+        .controls {
+            float: right;
+            margin-right: 10%; 
+            margin-left: -20%;
+            color: #84ACE8;
+        }
+
+        .information {
+            float: left;
+            margin-left: 10%; 
+            margin-right: -20%;
+            color: #84ACE8;
+            line-height: 130%;
+        }
+
+
     </style>
 
 </head>
 <body>
+
+    <h1>My Snake</h1>
+<!-- Controls -->
+    <div class="controls">
+        <h3>Controls</h3>   
+        <p>w∕up﹘arrow → move up</p>
+        <p>s∕down﹘arrow → move down</p>
+        <p>a∕left﹘arrow → move left</p>
+        <p>d∕right﹘arrow →  move right</p>
+        <br>
+        <p>r → reset</p>
+    </div>
+
+<!-- Information -->
+    <div class="information">
+        <h3>Information</h3>    
+        <p>You loose if you touch yourself</p>
+        <p>If you touch the walls you get <br> teleported to the other side</p>
+        <p>Collect food to grow bigger</p>
+    </div>
+</body>
+
 
 </body>
 </html>
