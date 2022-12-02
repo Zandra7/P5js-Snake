@@ -77,7 +77,12 @@ function draw() {
     if (slange[0].xpos == slange[i].xpos && slange[0].ypos == slange[i].ypos) {
       frameRate(0);
       textSize(72);
-      text("Du døde", 110, 150);
+      fill(132, 172, 232)
+      noStroke()
+      text("You died!", 90, 130);
+      textSize(50);
+      text("Press R to restart", 60, 200);
+      
     }
   }
 
