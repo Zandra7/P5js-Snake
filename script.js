@@ -4,7 +4,7 @@ var størrelse = 20;
 var xhas = størrelse;
 var yhas = 0;
 var score = 0;
-var framerate = 10;
+var framerate = 5;
 
 class Kroppsdel {
   constructor(xpos, ypos, stø, farge) {
